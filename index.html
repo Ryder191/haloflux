@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HALOFLUX</title>
+<style>html,body{margin:0;height:100%;background:#050608;color:#9aa;font:13px Consolas,monospace;display:flex;align-items:center;justify-content:center}a{color:#dde}</style>
+<script>
+  var touch = matchMedia('(pointer: coarse)').matches || /iPhone|iPad|Android|Mobile/i.test(navigator.userAgent);
+  location.replace((touch ? 'mobile.html' : 'lab.html') + location.search);
+</script>
+</head>
+<body><p><a href="lab.html">Desktop</a> · <a href="mobile.html">Mobile</a></p></body>
+</html>
