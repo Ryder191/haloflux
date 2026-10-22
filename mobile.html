@@ -42,6 +42,21 @@ header{display:grid;grid-template-columns:minmax(240px,1.7fr) repeat(5,minmax(0,
 .chk b{display:block;font-size:8px;color:var(--dim);font-weight:600;margin-bottom:3px}
 .chk span{font-size:12px;color:var(--white);font-weight:600;white-space:nowrap}
 .console{top:10px;right:14px;border:1px solid var(--line2);padding:3px 8px;background:rgba(8,9,11,.8)}
+.music{top:10px;right:104px;z-index:3;pointer-events:auto;display:flex;align-items:center;gap:6px;border:1px solid var(--line2);padding:2px 8px;background:rgba(8,9,11,.8);user-select:none}
+.music .mbtn{cursor:pointer;display:flex;align-items:center;gap:5px}
+.music:hover{border-color:#cfd2d8}
+.music .mbtn:hover em{color:#fff}
+.music em{font-style:normal;white-space:nowrap}
+.music.on em{color:var(--white)}
+.music.wait em{animation:bl 1s steps(1) infinite}
+.music .eq{display:inline-flex;align-items:flex-end;gap:1px;height:8px}
+.music .eq b{display:block;width:2px;height:2px;background:var(--dim)}
+.music.on .eq b{background:var(--white);animation:eqb .9s ease-in-out infinite}
+.music.on .eq b:nth-child(2){animation-delay:-.3s}
+.music.on .eq b:nth-child(3){animation-delay:-.6s}
+@keyframes eqb{0%,100%{height:2px}50%{height:8px}}
+.music input[type=range]{width:70px;height:10px;margin:0;accent-color:#cfd2d8;cursor:pointer}
+.music .mval{width:16px;text-align:right;color:var(--dim);font-variant-numeric:tabular-nums}
 .status{right:16px;bottom:12px;text-align:right}
 .status .big{font-size:11px;color:var(--white);font-weight:800}
 .status .sm{color:var(--dim);font-size:8px;margin-top:2px}
@@ -129,6 +144,10 @@ header::-webkit-scrollbar{display:none}
 #cpanel .row{grid-template-columns:1fr 44% 58px!important;padding:6px 0!important}
 #cpanel input[type=range]{height:26px!important}
 #cpanel input[type=number]{padding:5px!important;font-size:12px}
+/* bgm mobile */
+.music{top:8px!important;right:112px!important;padding:5px 8px!important;font-size:10px!important;gap:7px!important}
+.music input[type=range]{width:56px!important;height:22px!important}
+@media (max-width:380px){.music input[type=range],.music .mval{display:none}}
 </style>
 </head>
 <body>
@@ -145,6 +164,12 @@ header::-webkit-scrollbar{display:none}
   <div class="stage" id="stageWrap">
     <canvas id="stage"></canvas>
     <div class="ov console">◱ CONSOLE</div>
+    <div class="ov music" id="bgm">
+      <span class="mbtn" id="bgmBtn" title="开/关背景音乐（M 键）"><i class="eq"><b></b><b></b><b></b></i><em id="bgmTxt">BGM OFF</em></span>
+      <input type="range" id="bgmVol" min="0" max="100" step="1" value="60" title="音量">
+      <span class="mval" id="bgmVal">60</span>
+    </div>
+    <audio id="bgmAudio" data-src="audio/sw421k.mp3" loop preload="auto" playsinline></audio>
     <div class="ov chk" id="chk"><b id="chkK">STABILITY CHECK</b><span id="chkV">CFL = |u| Δt / Δx</span></div>
     <div class="ov status"><div class="big" id="stBig">7 / 11 METHODS · 4 PENDING</div><div class="sm">independent runs · shared event bus</div></div>
   </div>
@@ -1540,7 +1565,7 @@ panel.innerHTML = `
     PARAMS.filter(p => p[5] === g).map(p => `<div class="row" data-k="${p[0]}"><label title="${p[1]}">${p[1]}</label>
       <input type="range" min="${p[2]}" max="${p[3]}" step="${p[4]}"><input type="number" min="${p[2]}" max="${p[3]}" step="${p[4]}"></div>`).join('')
   }</details>`).join('')}</div>
-  <div class="hint">点 CONSOLE 开/关控制台 · 双击画面全屏（iPhone 请用「添加到主屏幕」） · 改动自动保存在本机</div>`;
+  <div class="hint">点 CONSOLE 开/关控制台 · 点 BGM 开/关音乐 · 双击画面全屏（iPhone 请用「添加到主屏幕」） · 改动自动保存在本机</div>`;
 document.body.appendChild(panel);
 function syncPanel() {
   panel.querySelectorAll('.row').forEach(r => {
@@ -1596,6 +1621,124 @@ document.addEventListener('keydown', e => {
   for (const k in PRESETS[name]) setParam(k, src[k], true);
   if (location.hash === '#console') panel.classList.add('open');
   syncPanel();
+})();
+
+/* =========================================================
+   BGM — background music (button / M key toggles, slider sets volume)
+   Browsers block audible autoplay, so music starts on the first tap / click / key
+   if it could not start on load. iOS ignores <audio>.volume, so there the level
+   is driven through a Web Audio GainNode (http/https only).
+   ========================================================= */
+(function initBGM() {
+  const KEY = 'paperlab.bgm.v1';
+  const au = document.getElementById('bgmAudio');
+  const box = document.getElementById('bgm');
+  const txt = document.getElementById('bgmTxt');
+  const vol = document.getElementById('bgmVol');
+  const val = document.getElementById('bgmVal');
+  const emb = document.getElementById('bgmData');
+  const TOUCH = matchMedia('(pointer: coarse)').matches;
+  if (emb && emb.textContent.trim()) {
+    try {
+      const bin = atob(emb.textContent.replace(/\s+/g, ''));
+      const buf = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
+      au.src = URL.createObjectURL(new Blob([buf], { type: 'audio/mpeg' }));
+      emb.textContent = '';
+    } catch (e) { au.src = au.dataset.src; }
+  } else au.src = au.dataset.src;
+  au.setAttribute('playsinline', '');
+  let st = { on: true, vol: 60 };
+  try { st = { ...st, ...(JSON.parse(localStorage.getItem(KEY) || 'null') || {}) }; } catch (e) {}
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
+  try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}   // iOS: play even with the silent switch on
+
+  // volume path: element volume, or a GainNode where element volume is read-only (iOS)
+  const roVolume = (() => { try { au.volume = 0.5; const ro = Math.abs(au.volume - 0.5) > 0.01; au.volume = 1; return ro; } catch (e) { return true; } })();
+  const AC = window.AudioContext || window.webkitAudioContext;
+  const useWA = roVolume && !!AC && /^https?:$/.test(location.protocol);
+  let ctx = null, gain = null;
+  function graph() {
+    if (!useWA || ctx) return;
+    try {
+      ctx = new AC(); gain = ctx.createGain(); gain.gain.value = 0;
+      ctx.createMediaElementSource(au).connect(gain); gain.connect(ctx.destination);
+    } catch (e) { ctx = null; gain = null; }
+  }
+  const getV = () => gain ? gain.gain.value : au.volume;
+  const setV = v => { v = Math.max(0, Math.min(1, v)); if (gain) gain.gain.value = v; else au.volume = v; };
+  const target = () => Math.pow(st.vol / 100, 1.6);
+  let fadeRaf = 0;
+  function fadeTo(to, ms, done) {
+    cancelAnimationFrame(fadeRaf);
+    const from = getV(), t0 = performance.now();
+    const step = now => {
+      const k = Math.min(1, (now - t0) / ms);
+      setV(from + (to - from) * k);
+      if (k < 1) fadeRaf = requestAnimationFrame(step); else if (done) done();
+    };
+    fadeRaf = requestAnimationFrame(step);
+  }
+  const playing = () => !au.paused && (!ctx || ctx.state === 'running');
+  function ui(wait) {
+    box.classList.toggle('on', st.on && playing());
+    box.classList.toggle('wait', !!wait);
+    txt.textContent = wait ? (TOUCH ? 'TAP TO PLAY' : 'CLICK TO PLAY') : st.on && playing() ? 'BGM ON' : 'BGM OFF';
+    vol.value = st.vol; val.textContent = st.vol;
+  }
+
+  // first-gesture unlock
+  const EVT = ['pointerdown', 'touchend', 'click', 'keydown'];
+  let armed = false;
+  const kick = e => {
+    if (box.contains(e.target) || e.key === 'm' || e.key === 'M') return;
+    if (st.on && !playing()) play();
+  };
+  function arm(on) {
+    if (on === armed) return; armed = on;
+    EVT.forEach(n => (on ? window.addEventListener : window.removeEventListener).call(window, n, kick, true));
+  }
+  let pending = false;
+  function play() {
+    if (pending) return;
+    graph();
+    // both calls must start synchronously inside the user gesture (iOS)
+    const r = ctx && ctx.state !== 'running' ? Promise.race([ctx.resume(), new Promise(res => setTimeout(res, 800))]) : null;
+    setV(0);
+    let p; try { p = au.play(); } catch (e) { p = Promise.reject(e); }
+    pending = true;
+    Promise.all([p && p.then ? p : Promise.resolve(), r || Promise.resolve()]).then(() => {
+      pending = false;
+      if (ctx && ctx.state !== 'running') { ui(true); arm(true); return; }
+      arm(false); fadeTo(target(), 900); ui();
+    }).catch(() => { pending = false; ui(true); arm(true); });
+  }
+  function stop() { arm(false); fadeTo(0, 400, () => { au.pause(); ui(); }); }
+  function toggle() {
+    if (st.on && !playing()) { play(); return; }
+    st.on = !st.on; save(); st.on ? play() : stop(); ui();
+  }
+
+  document.getElementById('bgmBtn').addEventListener('click', e => { e.stopPropagation(); toggle(); });
+  vol.addEventListener('input', () => {
+    st.vol = +vol.value; save(); val.textContent = st.vol;
+    cancelAnimationFrame(fadeRaf); if (playing()) setV(target());
+  });
+  ['dblclick', 'pointerdown', 'touchend'].forEach(n => box.addEventListener(n, e => e.stopPropagation()));
+  document.addEventListener('keydown', e => {
+    if (e.target.matches('input,textarea')) return;
+    if (e.key === 'm' || e.key === 'M') toggle();
+  });
+  au.addEventListener('error', () => { txt.textContent = 'BGM 文件未找到'; box.classList.remove('on', 'wait'); });
+  // pause in background tabs / when the phone locks, resume on return
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { if (!au.paused) { cancelAnimationFrame(fadeRaf); au.pause(); } }
+    else if (st.on) play();
+    ui();
+  });
+
+  ui();
+  if (st.on) play();
 })();
 </script>
 </body>
