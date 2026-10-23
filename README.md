@@ -16,6 +16,9 @@ A full-screen, beat-driven sci-fi data visualization — a woven light-field cor
 | `mobile.html` | Mobile-compatible edition (portrait/landscape adaptive, lighter particle load) |
 | `index.html` | Entry page: opens `mobile.html` on touch devices, `lab.html` otherwise |
 | `audio/sw421k.mp3` | Background music (see Credits) |
+| `wallpaper/` | Wallpaper Engine / Lively Wallpaper edition (see below) |
+
+Showcase video: https://b23.tv/mBUoC3r
 
 ## Usage
 
@@ -34,6 +37,14 @@ Everyone who opens the page gets the baked-in default look ("我的默认").
 - Ring rotates with stutter-stops, sprints and drifts; 12 kinds of pre-rendered micro data blocks.
 - 5 stacked outer beam layers (far / mid / main / near / bounce wave), roots always attached to the ring.
 - Auto camera with push-ins across 7 shots.
+
+## Desktop wallpaper
+
+The `wallpaper/` folder is a ready-to-use **Wallpaper Engine** web wallpaper (`project.json` + `index.html`). No mouse UI, works offline, pauses (visuals and music) when a fullscreen app covers it.
+
+- **Wallpaper Engine**: subscribe on the Steam Workshop (search *HALOFLUX*), or open the editor → *Create Wallpaper* → drop `wallpaper/index.html` in.
+- **Lively Wallpaper** (free): *Add wallpaper* → URL `https://ryder191.github.io/haloflux/wallpaper/`.
+- Settings: visual preset, tempo, glow, ring speed, beam glow, scanlines, UI panels on/off (off = halo only), music on/off and volume.
 
 ## Credits
 
@@ -57,6 +68,9 @@ MIT (code). The bundled music is CC0.
 | `mobile.html` | 移动端兼容版（横竖屏自适应，粒子负载更轻） |
 | `index.html` | 入口页：触屏设备自动打开 `mobile.html`，其他设备打开 `lab.html` |
 | `audio/sw421k.mp3` | 背景音乐（见「致谢」） |
+| `wallpaper/` | 动态壁纸版（Wallpaper Engine / Lively Wallpaper，见下文） |
+
+演示视频：https://b23.tv/mBUoC3r
 
 ### 使用方法
 
@@ -75,6 +89,14 @@ MIT (code). The bundled music is CC0.
 - 圆环转动带有卡顿急停、快速冲刺和缓慢漂移；内含 12 种预渲染的微型数据块。
 - 环外光束共 5 层叠加（远景 / 中景 / 主层 / 近景 / 回弹波浪），光束根部始终连着圆环。
 - 自动运镜，7 个镜头间带推近效果。
+
+### 桌面动态壁纸
+
+`wallpaper/` 目录就是一个可以直接使用的 **Wallpaper Engine** 网页壁纸（`project.json` + `index.html`）：没有鼠标界面、离线可用，被全屏程序遮挡时画面和音乐都会自动暂停。
+
+- **Wallpaper Engine**：在 Steam 创意工坊搜索 *HALOFLUX* 订阅；或者打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
+- **Lively Wallpaper**（免费）：添加壁纸 → 输入网址 `https://ryder191.github.io/haloflux/wallpaper/`。
+- 可调设置：视觉预设、节拍速度、柔光、圆环转速、光束辉光、扫描线、界面面板开关（关闭后只留光环）、背景音乐开关和音量。
 
 ### 致谢
 

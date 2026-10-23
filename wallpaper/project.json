@@ -1,0 +1,87 @@
+{
+  "description": "HALOFLUX — 节拍驱动的光环数据可视化壁纸。左侧大圆网线 + 中央旋转数据环带 + 环外放射光束，随节拍变速。\n\nGitHub 开源地址：https://github.com/Ryder191/haloflux\n演示视频：https://b23.tv/mBUoC3r\n\n网页版（浏览器直接打开）：https://ryder191.github.io/haloflux/\n背景音乐：Synthwave 421k — The Cynic Project (cynicmusic)，CC0 授权。",
+  "file": "index.html",
+  "general": {
+    "properties": {
+      "preset": {
+        "order": 0,
+        "text": "视觉预设",
+        "type": "combo",
+        "value": "MINE",
+        "options": [
+          { "label": "我的默认（高密度光束）", "value": "MINE" },
+          { "label": "预设 A 暗底窄网线", "value": "A" },
+          { "label": "预设 B 亮线均衡", "value": "B" }
+        ]
+      },
+      "tempo": {
+        "order": 1,
+        "text": "节拍速度",
+        "type": "slider",
+        "value": 2.0,
+        "min": 0.4,
+        "max": 2.5,
+        "step": 0.05
+      },
+      "glow": {
+        "order": 2,
+        "text": "柔光强度",
+        "type": "slider",
+        "value": 1.1,
+        "min": 0,
+        "max": 1.5,
+        "step": 0.05
+      },
+      "ringspeed": {
+        "order": 3,
+        "text": "圆环转速",
+        "type": "slider",
+        "value": 2.4,
+        "min": 0,
+        "max": 3,
+        "step": 0.05
+      },
+      "beamglow": {
+        "order": 4,
+        "text": "光束辉光",
+        "type": "slider",
+        "value": 2.6,
+        "min": 0,
+        "max": 6,
+        "step": 0.1
+      },
+      "scanlines": {
+        "order": 5,
+        "text": "扫描线质感",
+        "type": "bool",
+        "value": true
+      },
+      "showui": {
+        "order": 6,
+        "text": "显示界面面板（关闭=只留光环）",
+        "type": "bool",
+        "value": false
+      },
+      "music": {
+        "order": 7,
+        "text": "背景音乐",
+        "type": "bool",
+        "value": true
+      },
+      "volume": {
+        "order": 8,
+        "text": "音乐音量",
+        "type": "slider",
+        "value": 55,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      }
+    }
+  },
+  "preview": "preview.jpg",
+  "tags": ["Abstract", "Sci-Fi", "Technology"],
+  "title": "HALOFLUX",
+  "type": "web",
+  "version": 1
+}
