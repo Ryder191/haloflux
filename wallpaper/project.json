@@ -85,7 +85,7 @@
         "order": 8,
         "text": "显示界面面板（关闭=只留光环）",
         "type": "bool",
-        "value": false
+        "value": true
       },
       "music": {
         "order": 9,

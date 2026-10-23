@@ -16,7 +16,7 @@
     beamGlow: 2.6,
     camera: true,
     camZoom: 1,
-    showui: false,
+    showui: true,
     scanlines: true,
     music: true,
     volume: 55
