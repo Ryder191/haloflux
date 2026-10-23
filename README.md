@@ -20,6 +20,8 @@ A full-screen, beat-driven sci-fi data visualization — a woven light-field cor
 
 Showcase video: https://b23.tv/mBUoC3r
 
+Steam Workshop (Wallpaper Engine): https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960
+
 ## Usage
 
 - Just open the HTML file in Edge / Chrome / Safari.
@@ -42,7 +44,7 @@ Everyone who opens the page gets the baked-in default look ("我的默认").
 
 The `wallpaper/` folder is a ready-to-use **Wallpaper Engine** web wallpaper (`project.json` + `index.html`). No mouse UI, works offline, pauses (visuals and music) when a fullscreen app covers it.
 
-- **Wallpaper Engine**: subscribe on the Steam Workshop (search *HALOFLUX*), or open the editor → *Create Wallpaper* → drop `wallpaper/index.html` in.
+- **Wallpaper Engine**: [subscribe on the Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960) (or search *HALOFLUX*), or open the editor → *Create Wallpaper* → drop `wallpaper/index.html` in.
 - **Lively Wallpaper** (free): *Add wallpaper* → URL `https://ryder191.github.io/haloflux/wallpaper/`.
 - Settings: visual preset, tempo, ring speed (both default to a calm 0.6), auto camera on/off and camera intensity, glow, beam glow, scanlines, UI panels on/off (off = halo only), music on/off and volume.
 
@@ -72,6 +74,8 @@ MIT (code). The bundled music is CC0.
 
 演示视频：https://b23.tv/mBUoC3r
 
+Steam 创意工坊（Wallpaper Engine 壁纸）：https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960
+
 ### 使用方法
 
 - 用 Edge / Chrome / Safari 直接打开 HTML 文件即可。
@@ -94,7 +98,7 @@ MIT (code). The bundled music is CC0.
 
 `wallpaper/` 目录就是一个可以直接使用的 **Wallpaper Engine** 网页壁纸（`project.json` + `index.html`）：没有鼠标界面、离线可用，被全屏程序遮挡时画面和音乐都会自动暂停。
 
-- **Wallpaper Engine**：在 Steam 创意工坊搜索 *HALOFLUX* 订阅；或者打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
+- **Wallpaper Engine**：[在 Steam 创意工坊订阅](https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960)（或搜索 *HALOFLUX*）；也可以打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
 - **Lively Wallpaper**（免费）：添加壁纸 → 输入网址 `https://ryder191.github.io/haloflux/wallpaper/`。
 - 可调设置：视觉预设、节拍速度、圆环转速（两者默认都是舒缓的 0.6）、自动运镜开关和运镜幅度、柔光、光束辉光、扫描线、界面面板开关（关闭后只留光环）、背景音乐开关和音量。
 
