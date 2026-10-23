@@ -10,10 +10,12 @@
 
   const DEFAULTS = {
     preset: 'MINE',
-    tempo: 2.0,
+    tempo: 0.6,
     glow: 1.1,
-    ringSpeed: 2.4,
+    ringSpeed: 0.6,
     beamGlow: 2.6,
+    camera: true,
+    camZoom: 1,
     showui: false,
     scanlines: true,
     music: true,
@@ -34,6 +36,8 @@
     set('ringSpeed', P.ringSpeed);
     set('beamGlow', P.beamGlow);
     set('scan', P.scanlines ? 1 : 0);
+    set('camera', P.camera ? 1 : 0);
+    set('camZoom', P.camZoom);
   }
 
   /* ---------- 界面：默认只留中间的圆环 ---------- */
@@ -74,6 +78,8 @@
       if (props.glow) P.glow = num(props.glow.value, DEFAULTS.glow);
       if (props.ringspeed) P.ringSpeed = num(props.ringspeed.value, DEFAULTS.ringSpeed);
       if (props.beamglow) P.beamGlow = num(props.beamglow.value, DEFAULTS.beamGlow);
+      if (props.camera) P.camera = props.camera.value !== false;
+      if (props.camzoom) P.camZoom = num(props.camzoom.value, DEFAULTS.camZoom);
       if (props.showui) P.showui = props.showui.value !== false;
       if (props.scanlines) P.scanlines = props.scanlines.value !== false;
       if (props.music) P.music = props.music.value !== false;

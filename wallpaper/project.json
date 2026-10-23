@@ -18,58 +18,83 @@
         "order": 1,
         "text": "节拍速度",
         "type": "slider",
-        "value": 2.0,
+        "value": 0.6,
         "min": 0.4,
         "max": 2.5,
-        "step": 0.05
+        "step": 0.05,
+        "precision": 2,
+        "fraction": true
+      },
+      "ringspeed": {
+        "order": 2,
+        "text": "圆环转速",
+        "type": "slider",
+        "value": 0.6,
+        "min": 0,
+        "max": 3,
+        "step": 0.05,
+        "precision": 2,
+        "fraction": true
+      },
+      "camera": {
+        "order": 3,
+        "text": "自动运镜",
+        "type": "bool",
+        "value": true
+      },
+      "camzoom": {
+        "order": 4,
+        "text": "运镜幅度",
+        "type": "slider",
+        "value": 1,
+        "min": 0,
+        "max": 2,
+        "step": 0.05,
+        "precision": 2,
+        "fraction": true
       },
       "glow": {
-        "order": 2,
+        "order": 5,
         "text": "柔光强度",
         "type": "slider",
         "value": 1.1,
         "min": 0,
         "max": 1.5,
-        "step": 0.05
-      },
-      "ringspeed": {
-        "order": 3,
-        "text": "圆环转速",
-        "type": "slider",
-        "value": 2.4,
-        "min": 0,
-        "max": 3,
-        "step": 0.05
+        "step": 0.05,
+        "precision": 2,
+        "fraction": true
       },
       "beamglow": {
-        "order": 4,
+        "order": 6,
         "text": "光束辉光",
         "type": "slider",
         "value": 2.6,
         "min": 0,
         "max": 6,
-        "step": 0.1
+        "step": 0.1,
+        "precision": 1,
+        "fraction": true
       },
       "scanlines": {
-        "order": 5,
+        "order": 7,
         "text": "扫描线质感",
         "type": "bool",
         "value": true
       },
       "showui": {
-        "order": 6,
+        "order": 8,
         "text": "显示界面面板（关闭=只留光环）",
         "type": "bool",
         "value": false
       },
       "music": {
-        "order": 7,
+        "order": 9,
         "text": "背景音乐",
         "type": "bool",
         "value": true
       },
       "volume": {
-        "order": 8,
+        "order": 10,
         "text": "音乐音量",
         "type": "slider",
         "value": 55,

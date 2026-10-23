@@ -44,7 +44,7 @@ The `wallpaper/` folder is a ready-to-use **Wallpaper Engine** web wallpaper (`p
 
 - **Wallpaper Engine**: subscribe on the Steam Workshop (search *HALOFLUX*), or open the editor → *Create Wallpaper* → drop `wallpaper/index.html` in.
 - **Lively Wallpaper** (free): *Add wallpaper* → URL `https://ryder191.github.io/haloflux/wallpaper/`.
-- Settings: visual preset, tempo, glow, ring speed, beam glow, scanlines, UI panels on/off (off = halo only), music on/off and volume.
+- Settings: visual preset, tempo, ring speed (both default to a calm 0.6), auto camera on/off and camera intensity, glow, beam glow, scanlines, UI panels on/off (off = halo only), music on/off and volume.
 
 ## Credits
 
@@ -96,7 +96,7 @@ MIT (code). The bundled music is CC0.
 
 - **Wallpaper Engine**：在 Steam 创意工坊搜索 *HALOFLUX* 订阅；或者打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
 - **Lively Wallpaper**（免费）：添加壁纸 → 输入网址 `https://ryder191.github.io/haloflux/wallpaper/`。
-- 可调设置：视觉预设、节拍速度、柔光、圆环转速、光束辉光、扫描线、界面面板开关（关闭后只留光环）、背景音乐开关和音量。
+- 可调设置：视觉预设、节拍速度、圆环转速（两者默认都是舒缓的 0.6）、自动运镜开关和运镜幅度、柔光、光束辉光、扫描线、界面面板开关（关闭后只留光环）、背景音乐开关和音量。
 
 ### 致谢
 
