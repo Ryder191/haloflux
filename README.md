@@ -2,6 +2,8 @@
 
 > RYDER CODE / Ms MAIKEBAIs CAT
 
+**English** | [中文](#中文说明)
+
 A full-screen, beat-driven sci-fi data visualization — a woven light-field core, a rotating ring of micro data panels, and layered beams bursting outward. Pure native Canvas, single HTML file, zero dependencies.
 
 ![preview](preview.png)
@@ -40,3 +42,44 @@ Music: **"Synthwave 421k"** by The Cynic Project (cynicmusic), from the *Pixelsp
 ## License
 
 MIT (code). The bundled music is CC0.
+
+---
+
+## 中文说明
+
+一个全屏、节拍驱动的科幻数据可视化：中心是编织状的光场核心，外面是一圈由微型数据面板组成的旋转圆环，环外有多层向外迸发的光束。纯原生 Canvas，单个 HTML 文件，零依赖。
+
+### 文件
+
+| 文件 | 说明 |
+|---|---|
+| `lab.html` | 桌面控制台版（16:9 全屏效果最佳） |
+| `mobile.html` | 移动端兼容版（横竖屏自适应，粒子负载更轻） |
+| `index.html` | 入口页：触屏设备自动打开 `mobile.html`，其他设备打开 `lab.html` |
+| `audio/sw421k.mp3` | 背景音乐（见「致谢」） |
+
+### 使用方法
+
+- 用 Edge / Chrome / Safari 直接打开 HTML 文件即可。
+- **双击**画面或按 **F** 键：切换全屏。
+- 点击右上角 **CONSOLE** 或按 **C** 键：打开实时调参面板（56 个参数：节拍速度、圆环转速、光束层、辉光、景深……）。
+- 设置可**导出 / 导入**为 JSON；点击**保存为默认**，会把当前调整保存在本机浏览器中。
+- 在网址后加 `?preset=a` / `?preset=b`，可切换到内置的 A（暗底）/ B（亮线）预设。
+- **背景音乐**默认开启。浏览器在用户首次交互前会禁止播放声音，所以 BGM 按钮会显示 *CLICK / TAP TO PLAY*，任意点击、轻触或按键即可开始播放。点击 **BGM** 按钮或按 **M** 键开关音乐，用旁边的滑块调节音量（每个浏览器会记住各自的设置）。在 iPhone 上，即使打开了静音开关也能播放音乐（iOS 17 及以上）。
+
+所有打开页面的人看到的都是内置的默认外观（「我的默认」）。
+
+### 亮点
+
+- 不均匀的节拍时钟驱动一切，没有任何东西是匀速运动的。
+- 圆环转动带有卡顿急停、快速冲刺和缓慢漂移；内含 12 种预渲染的微型数据块。
+- 环外光束共 5 层叠加（远景 / 中景 / 主层 / 近景 / 回弹波浪），光束根部始终连着圆环。
+- 自动运镜，7 个镜头间带推近效果。
+
+### 致谢
+
+音乐：The Cynic Project（cynicmusic）的 **"Synthwave 421k"**，出自 *Pixelsphere* 原声，以 **CC0** 协议发布于 [OpenGameArt](https://opengameart.org/users/cynicmusic)。
+
+### 许可证
+
+代码采用 MIT 协议，附带的音乐为 CC0。
