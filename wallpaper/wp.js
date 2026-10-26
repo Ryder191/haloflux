@@ -1,3 +1,10 @@
+/*!
+ * HALOFLUX - Copyright (c) 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT). All rights reserved.
+ * https://github.com/Ryder191/haloflux
+ * Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE).
+ * Noncommercial use only. ANY COMMERCIAL USE IS STRICTLY PROHIBITED.
+ * 仅限非商业用途，严格禁止任何商业用途。转载或二创须保留本声明并注明出处。
+ */
 /* =========================================================
    HALOFLUX — Wallpaper Engine bridge
    属性由 project.json 的 general.properties 定义：

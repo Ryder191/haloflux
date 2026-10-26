@@ -1,5 +1,5 @@
 {
-  "description": "HALOFLUX — 节拍驱动的光环数据可视化壁纸。左侧大圆网线 + 中央旋转数据环带 + 环外放射光束，随节拍变速。\n\nGitHub 开源地址：https://github.com/Ryder191/haloflux\n演示视频：https://b23.tv/mBUoC3r\n\n网页版（浏览器直接打开）：https://ryder191.github.io/haloflux/\n背景音乐：Synthwave 421k — The Cynic Project (cynicmusic)，CC0 授权。",
+  "description": "HALOFLUX — 节拍驱动的光环数据可视化壁纸。左侧大圆网线 + 中央旋转数据环带 + 环外放射光束，随节拍变速。\n\nGitHub 开源地址：https://github.com/Ryder191/haloflux\n演示视频：https://b23.tv/mBUoC3r\n\n网页版（浏览器直接打开）：https://ryder191.github.io/haloflux/\n背景音乐：Synthwave 421k — The Cynic Project (cynicmusic)，CC0 授权。\n\n© 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT). All rights reserved. 仅限非商业使用，严格禁止任何商业用途 / Noncommercial use only - any commercial use is strictly prohibited (PolyForm Noncommercial 1.0.0).",
   "file": "index.html",
   "general": {
     "properties": {
@@ -9,9 +9,18 @@
         "type": "combo",
         "value": "MINE",
         "options": [
-          { "label": "我的默认（高密度光束）", "value": "MINE" },
-          { "label": "预设 A 暗底窄网线", "value": "A" },
-          { "label": "预设 B 亮线均衡", "value": "B" }
+          {
+            "label": "我的默认（高密度光束）",
+            "value": "MINE"
+          },
+          {
+            "label": "预设 A 暗底窄网线",
+            "value": "A"
+          },
+          {
+            "label": "预设 B 亮线均衡",
+            "value": "B"
+          }
         ]
       },
       "tempo": {
@@ -105,7 +114,11 @@
     }
   },
   "preview": "preview.jpg",
-  "tags": ["Abstract", "Sci-Fi", "Technology"],
+  "tags": [
+    "Abstract",
+    "Sci-Fi",
+    "Technology"
+  ],
   "title": "HALOFLUX",
   "type": "web",
   "version": 1

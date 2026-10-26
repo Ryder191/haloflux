@@ -6,6 +6,8 @@
 
 A full-screen, beat-driven sci-fi data visualization — a woven light-field core, a rotating ring of micro data panels, and layered beams bursting outward. Pure native Canvas, single HTML file, zero dependencies.
 
+> **Noncommercial use only. Any commercial use is strictly prohibited.** Free for personal study, hobby projects and private entertainment. See [License](#license).
+
 ![preview](preview.png)
 
 ## Files
@@ -20,7 +22,7 @@ A full-screen, beat-driven sci-fi data visualization — a woven light-field cor
 
 Showcase video: https://b23.tv/mBUoC3r
 
-Steam Workshop (Wallpaper Engine): https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960
+Steam Workshop (Wallpaper Engine): search *HALOFLUX* — listing coming soon.
 
 ## Usage
 
@@ -44,7 +46,7 @@ Everyone who opens the page gets the baked-in default look ("我的默认").
 
 The `wallpaper/` folder is a ready-to-use **Wallpaper Engine** web wallpaper (`project.json` + `index.html`). No mouse UI, works offline, pauses (visuals and music) when a fullscreen app covers it.
 
-- **Wallpaper Engine**: [subscribe on the Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960) (or search *HALOFLUX*), or open the editor → *Create Wallpaper* → drop `wallpaper/index.html` in.
+- **Wallpaper Engine**: search *HALOFLUX* on the Steam Workshop (listing coming soon), or open the editor → *Create Wallpaper* → drop `wallpaper/index.html` in.
 - **Lively Wallpaper** (free): *Add wallpaper* → URL `https://ryder191.github.io/haloflux/wallpaper/`.
 - Settings: visual preset, tempo, ring speed (both default to a calm 0.6), auto camera on/off and camera intensity, glow, beam glow, scanlines, UI panels on/off (off = halo only), music on/off and volume.
 
@@ -54,13 +56,25 @@ Music: **"Synthwave 421k"** by The Cynic Project (cynicmusic), from the *Pixelsp
 
 ## License
 
-MIT (code). The bundled music is CC0.
+**Copyright (c) 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT). All rights reserved.**
+
+HALOFLUX — its source code and its audiovisual design (composition, motion design, beat-driven timing, layered beam system, ring and panel graphics, color treatment, layout and overall look and feel) — is an original work protected by copyright.
+
+Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE):
+
+- ✅ **Free for noncommercial use**: personal study, hobby projects, private entertainment, research and teaching. You may use, modify and share it.
+- ❌ **Commercial use is strictly prohibited**, including use inside or on behalf of a company, integration into commercial products or services, client / paid work, selling the software or its outputs and derivatives (paid wallpapers, templates, assets, videos), and commercial advertising. No commercial licenses are offered.
+- When sharing or remixing, keep the copyright notice and credit **"HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT)"** with a link to this repository.
+
+Versions published before 2026-10-26 were released under MIT; from 2026-10-26 on, this project is licensed only under the terms above. The bundled music (`audio/sw421k.mp3`) is CC0 by its author and is not covered by this license.
 
 ---
 
 ## 中文说明
 
 一个全屏、节拍驱动的科幻数据可视化：中心是编织状的光场核心，外面是一圈由微型数据面板组成的旋转圆环，环外有多层向外迸发的光束。纯原生 Canvas，单个 HTML 文件，零依赖。
+
+> **仅限非商业用途，严格禁止任何商业用途。** 个人学习、兴趣项目、个人娱乐可免费使用。详见[许可证](#许可证)。
 
 ### 文件
 
@@ -74,7 +88,7 @@ MIT (code). The bundled music is CC0.
 
 演示视频：https://b23.tv/mBUoC3r
 
-Steam 创意工坊（Wallpaper Engine 壁纸）：https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960
+Steam 创意工坊（Wallpaper Engine 壁纸）：搜索 *HALOFLUX*，即将上架。
 
 ### 使用方法
 
@@ -98,7 +112,7 @@ Steam 创意工坊（Wallpaper Engine 壁纸）：https://steamcommunity.com/sha
 
 `wallpaper/` 目录就是一个可以直接使用的 **Wallpaper Engine** 网页壁纸（`project.json` + `index.html`）：没有鼠标界面、离线可用，被全屏程序遮挡时画面和音乐都会自动暂停。
 
-- **Wallpaper Engine**：[在 Steam 创意工坊订阅](https://steamcommunity.com/sharedfiles/filedetails/?id=3825128960)（或搜索 *HALOFLUX*）；也可以打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
+- **Wallpaper Engine**：在 Steam 创意工坊搜索 *HALOFLUX*（即将上架）；也可以打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
 - **Lively Wallpaper**（免费）：添加壁纸 → 输入网址 `https://ryder191.github.io/haloflux/wallpaper/`。
 - 可调设置：视觉预设、节拍速度、圆环转速（两者默认都是舒缓的 0.6）、自动运镜开关和运镜幅度、柔光、光束辉光、扫描线、界面面板开关（关闭后只留光环）、背景音乐开关和音量。
 
@@ -108,4 +122,14 @@ Steam 创意工坊（Wallpaper Engine 壁纸）：https://steamcommunity.com/sha
 
 ### 许可证
 
-代码采用 MIT 协议，附带的音乐为 CC0。
+**Copyright (c) 2026 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT），保留所有权利。**
+
+HALOFLUX 的源代码及其视听设计（画面构图、动态设计、节拍驱动的动画节奏、多层光束系统、圆环与数据面板图形、配色处理、界面布局及整体视觉风格）均为原创作品，受著作权法保护。
+
+按 [PolyForm Noncommercial License 1.0.0](LICENSE) 授权：
+
+- ✅ **非商业用途免费**：个人学习、兴趣项目、个人娱乐、研究与教学，可以使用、修改和分享。
+- ❌ **严格禁止任何商业用途**，包括但不限于：在公司内部或代表公司使用、集成到商业产品或服务、接单或有偿项目、出售本软件及其生成内容和衍生作品（付费壁纸、模板、素材、视频），以及商业广告推广。不提供商业授权。
+- 转载或二次创作时，必须保留版权声明，并注明 **「HALOFLUX by Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）」** 及本仓库链接。
+
+2026-10-26 之前发布的版本曾以 MIT 协议发布；自 2026-10-26 起，本项目仅按上述条款授权。附带的音乐（`audio/sw421k.mp3`）由原作者以 CC0 发布，不受本协议约束。
