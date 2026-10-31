@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="hf-g" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0b0d10"/>
+      <stop offset="62%" stop-color="#0b0d10"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </radialGradient>
+    <linearGradient id="hf-r" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fd8ff"/>
+      <stop offset="55%" stop-color="#c8b6ff"/>
+      <stop offset="100%" stop-color="#ff9ecb"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#hf-g)"/>
+  <g fill="none" stroke="url(#hf-r)">
+    <circle cx="32" cy="32" r="19" stroke-width="1.6" opacity="0.95"/>
+    <circle cx="32" cy="32" r="12" stroke-width="0.9" opacity="0.55"/>
+    <circle cx="32" cy="32" r="24" stroke-width="0.7" opacity="0.35" stroke-dasharray="2 5"/>
+  </g>
+  <g stroke="url(#hf-r)" stroke-width="1.1" stroke-linecap="round" opacity="0.9">
+    <line x1="32" y1="32" x2="55" y2="20"/>
+    <line x1="32" y1="32" x2="9" y2="41"/>
+    <line x1="32" y1="32" x2="46" y2="53"/>
+    <line x1="32" y1="32" x2="17" y2="12"/>
+  </g>
+  <circle cx="32" cy="32" r="3.2" fill="#dff4ff"/>
+</svg>

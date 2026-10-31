@@ -1,0 +1,43 @@
+{
+  "name": "dsh-haloflux",
+  "version": "0.3.1",
+  "description": "A live light-ring background for the DeepSeek Harness Web GUI, driven by the current session: ring rotation, token capture and beams follow the model call, with a Settings page and a three-level data capture dial.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "background",
+    "decoration",
+    "canvas",
+    "visualization"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-session"
+      ]
+    }
+  }
+}

@@ -1,0 +1,135 @@
+HALOFLUX
+Copyright (c) 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT). All rights reserved.
+https://github.com/Ryder191/haloflux
+
+Required Notice: Copyright (c) 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT) - https://github.com/Ryder191/haloflux
+Required Notice: Noncommercial use only. Any commercial use is strictly prohibited. No commercial licenses are offered.
+
+================================================================
+COPYRIGHT NOTICE / 版权声明
+================================================================
+
+HALOFLUX, including its source code and its audiovisual design -
+the composition, motion design, beat-driven animation timing,
+layered light-beam system, ring and data-panel graphics, color
+treatment, interface layout and the overall look and feel produced
+by the software - is an original work by Ryder191
+(RYDER CODE / Ms MAIKEBAIs CAT) and is protected by copyright.
+
+HALOFLUX 的源代码及其视听设计（包括画面构图、动态设计、节拍驱动的
+动画节奏、多层光束系统、圆环与数据面板图形、配色处理、界面布局，
+以及由本软件生成的整体视觉风格）均为 Ryder191（RYDER CODE /
+Ms MAIKEBAIs CAT）的原创作品，受著作权法保护。
+
+- Noncommercial use is free under the PolyForm Noncommercial
+  License 1.0.0 below: personal study, hobby projects, private
+  entertainment, research and teaching may use, modify and share it.
+- Commercial use is strictly prohibited. This includes, without
+  limitation: use inside or on behalf of a company, integration into
+  any commercial product or service, client or paid work, selling or
+  re-selling the software, its outputs or derivatives (including as
+  paid wallpapers, templates, assets or videos), and commercial
+  advertising or promotion.
+- Redistributions and derivative works must keep this copyright
+  notice and the "Required Notice" lines above, and must credit
+  "HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT)" with a
+  link to https://github.com/Ryder191/haloflux.
+
+- 非商业用途免费：个人学习、兴趣项目、个人娱乐、研究与教学，可以
+  使用、修改和分享。
+- 严格禁止任何商业用途，包括但不限于：在公司内部或代表公司使用、
+  集成到任何商业产品或服务、接单或有偿项目、出售或转售本软件及其
+  生成内容和衍生作品（包括付费壁纸、模板、素材、视频），以及商业
+  广告和推广。
+- 转载和二次创作必须保留本版权声明和上方的 "Required Notice"，
+  并注明「HALOFLUX by Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）」
+  及链接 https://github.com/Ryder191/haloflux 。
+
+Earlier history: commits dated before 2026-10-26 were published under
+the MIT License. Starting 2026-10-26, this project and every later
+version are licensed only under the terms below.
+历史说明：2026-10-26 之前的提交曾以 MIT 协议发布；自 2026-10-26 起，
+本项目及之后的所有版本仅按下方条款授权。
+
+The bundled music file audio/sw421k.mp3 ("Synthwave 421k" by The
+Cynic Project / cynicmusic) is not covered by this license; it is
+CC0 (public domain dedication) by its author.
+附带的音乐文件 audio/sw421k.mp3 不受本协议约束，原作者以 CC0 发布。
+
+================================================================
+LICENSE TERMS
+================================================================
+
+# PolyForm Noncommercial License 1.0.0
+
+<https://polyformproject.org/licenses/noncommercial/1.0.0>
+
+## Acceptance
+
+In order to get any license under these terms, you must agree to them as both strict obligations and conditions to all your licenses.
+
+## Copyright License
+
+The licensor grants you a copyright license for the software to do everything you might do with the software that would otherwise infringe the licensor's copyright in it for any permitted purpose.  However, you may only distribute the software according to [Distribution License](#distribution-license) and make changes or new works based on the software according to [Changes and New Works License](#changes-and-new-works-license).
+
+## Distribution License
+
+The licensor grants you an additional copyright license to distribute copies of the software.  Your license to distribute covers distributing the software with changes and new works permitted by [Changes and New Works License](#changes-and-new-works-license).
+
+## Notices
+
+You must ensure that anyone who gets a copy of any part of the software from you also gets a copy of these terms or the URL for them above, as well as copies of any plain-text lines beginning with `Required Notice:` that the licensor provided with the software.  For example:
+
+> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
+
+## Changes and New Works License
+
+The licensor grants you an additional copyright license to make changes and new works based on the software for any permitted purpose.
+
+## Patent License
+
+The licensor grants you a patent license for the software that covers patent claims the licensor can license, or becomes able to license, that you would infringe by using the software.
+
+## Noncommercial Purposes
+
+Any noncommercial purpose is a permitted purpose.
+
+## Personal Uses
+
+Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, is use for a permitted purpose.
+
+## Noncommercial Organizations
+
+Use by any charitable organization, educational institution, public research organization, public safety or health organization, environmental protection organization, or government institution is use for a permitted purpose regardless of the source of funding or obligations resulting from the funding.
+
+## Fair Use
+
+You may have "fair use" rights for the software under the law. These terms do not limit them.
+
+## No Other Rights
+
+These terms do not allow you to sublicense or transfer any of your licenses to anyone else, or prevent the licensor from granting licenses to anyone else.  These terms do not imply any other licenses.
+
+## Patent Defense
+
+If you make any written claim that the software infringes or contributes to infringement of any patent, your patent license for the software granted under these terms ends immediately. If your company makes such a claim, your patent license ends immediately for work on behalf of your company.
+
+## Violations
+
+The first time you are notified in writing that you have violated any of these terms, or done anything with the software not covered by your licenses, your licenses can nonetheless continue if you come into full compliance with these terms, and take practical steps to correct past violations, within 32 days of receiving notice.  Otherwise, all your licenses end immediately.
+
+## No Liability
+
+***As far as the law allows, the software comes as is, without any warranty or condition, and the licensor will not be liable to you for any damages arising out of these terms or the use or nature of the software, under any kind of legal claim.***
+
+## Definitions
+
+The **licensor** is the individual or entity offering these terms, and the **software** is the software the licensor makes available under these terms.
+
+**You** refers to the individual or entity agreeing to these terms.
+
+**Your company** is any legal entity, sole proprietorship, or other kind of organization that you work for, plus all organizations that have control over, are under the control of, or are under common control with that organization.  **Control** means ownership of substantially all the assets of an entity, or the power to direct its management and policies by vote, contract, or otherwise.  Control can be direct or indirect.
+
+**Your licenses** are all the licenses granted to you for the software under these terms.
+
+**Use** means anything you do with the software requiring one of your licenses.
