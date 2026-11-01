@@ -1618,8 +1618,10 @@ document.addEventListener('keydown', e => {
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
   try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}   // iOS: play even with the silent switch on
 
-  // volume path: element volume, or a GainNode where element volume is read-only (iOS)
-  const roVolume = (() => { try { au.volume = 0.5; const ro = Math.abs(au.volume - 0.5) > 0.01; au.volume = 1; return ro; } catch (e) { return true; } })();
+  // volume path: element volume, or a GainNode where element volume is read-only (iOS).
+  // iOS / iPadOS always take the GainNode path instead of relying on the read-back test.
+  const IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const roVolume = IOS || (() => { try { au.volume = 0.5; const ro = Math.abs(au.volume - 0.5) > 0.01; au.volume = 1; return ro; } catch (e) { return true; } })();
   const AC = window.AudioContext || window.webkitAudioContext;
   const useWA = roVolume && !!AC && /^https?:$/.test(location.protocol);
   let ctx = null, gain = null;
@@ -1652,21 +1654,21 @@ document.addEventListener('keydown', e => {
     vol.value = st.vol; val.textContent = st.vol;
   }
 
-  // first-gesture unlock
-  const EVT = ['pointerdown', 'touchend', 'click', 'keydown'];
+  // first-gesture unlock (a touch pointerdown is not a user activation on iOS, so only touchend / click / key)
+  const EVT = ['touchend', 'click', 'keydown'];
   let armed = false;
   const kick = e => {
     if (box.contains(e.target) || e.key === 'm' || e.key === 'M') return;
-    if (st.on && !playing()) play();
+    if (st.on && !playing()) play(true);
   };
   function arm(on) {
     if (on === armed) return; armed = on;
     EVT.forEach(n => (on ? window.addEventListener : window.removeEventListener).call(window, n, kick, true));
   }
   let pending = false;
-  function play() {
+  function play(gesture) {
     if (pending) return;
-    graph();
+    if (gesture) graph();   // create the AudioContext only inside a real tap / click (iOS)
     // both calls must start synchronously inside the user gesture (iOS)
     const r = ctx && ctx.state !== 'running' ? Promise.race([ctx.resume(), new Promise(res => setTimeout(res, 800))]) : null;
     setV(0);
@@ -1680,8 +1682,8 @@ document.addEventListener('keydown', e => {
   }
   function stop() { arm(false); fadeTo(0, 400, () => { au.pause(); ui(); }); }
   function toggle() {
-    if (st.on && !playing()) { play(); return; }
-    st.on = !st.on; save(); st.on ? play() : stop(); ui();
+    if (st.on && !playing()) { play(true); return; }
+    st.on = !st.on; save(); st.on ? play(true) : stop(); ui();
   }
 
   document.getElementById('bgmBtn').addEventListener('click', e => { e.stopPropagation(); toggle(); });
