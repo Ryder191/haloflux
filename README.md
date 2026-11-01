@@ -50,6 +50,12 @@ The `wallpaper/` folder is a ready-to-use **Wallpaper Engine** web wallpaper (`p
 - **Lively Wallpaper** (free): *Add wallpaper* → URL `https://ryder191.github.io/haloflux/wallpaper/`.
 - Settings: visual preset, tempo, ring speed (both default to a calm 0.6), auto camera on/off and camera intensity, glow, beam glow, scanlines, UI panels on/off (off = halo only), music on/off and volume.
 
+## Community
+
+Projects built on HALOFLUX by the community, maintained by their own authors (noncommercial, under the same license):
+
+- **[dsh-haloflux](https://github.com/Ke-wood/dsh-haloflux)** by [@Ke-wood](https://github.com/Ke-wood): a DeepSeek Harness (DSH) plugin that turns HALOFLUX into a live background driven by the current agent session, with a settings page.
+
 ## Credits
 
 Music: **"Synthwave 421k"** by The Cynic Project (cynicmusic), from the *Pixelsphere* soundtrack — released under **CC0** on [OpenGameArt](https://opengameart.org/users/cynicmusic).
@@ -115,6 +121,12 @@ Steam 创意工坊（Wallpaper Engine 壁纸）：搜索 *HALOFLUX*，即将上�
 - **Wallpaper Engine**：在 Steam 创意工坊搜索 *HALOFLUX*（即将上架）；也可以打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
 - **Lively Wallpaper**（免费）：添加壁纸 → 输入网址 `https://ryder191.github.io/haloflux/wallpaper/`。
 - 可调设置：视觉预设、节拍速度、圆环转速（两者默认都是舒缓的 0.6）、自动运镜开关和运镜幅度、柔光、光束辉光、扫描线、界面面板开关（关闭后只留光环）、背景音乐开关和音量。
+
+### 社区作品
+
+社区基于 HALOFLUX 制作的项目，由各自作者维护（非商业，沿用同一许可证）：
+
+- **[dsh-haloflux](https://github.com/Ke-wood/dsh-haloflux)**，作者 [@Ke-wood](https://github.com/Ke-wood)：DeepSeek Harness（DSH）插件，把 HALOFLUX 变成随当前会话实时变化的背景，并带设置页。
 
 ### 致谢
 
