@@ -1,15 +1,19 @@
 <!doctype html>
 <!--
   HALOFLUX - Copyright (c) 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT). All rights reserved.
-  https://github.com/Ryder191/haloflux
 
   Source code and audiovisual design are original works protected by copyright.
   Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE).
   Noncommercial use only. ANY COMMERCIAL USE IS STRICTLY PROHIBITED.
   Keep this notice and credit "HALOFLUX by Ryder191" when sharing or remixing.
+  Republishing on the Steam Workshop or other wallpaper platforms: credit the author
+  (Ryder191 / RYDER CODE / Ms MAIKEBAIs CAT) and the source repository (Ryder191/haloflux
+  on GitHub) in the item description; no monetization of any kind. See LICENSE.
 
   源代码与视觉设计均为原创作品，受著作权保护。按 PolyForm Noncommercial 1.0.0 授权。
   仅限非商业用途，严格禁止任何商业用途。转载或二创须保留本声明并注明出处。
+  转发到 Steam 创意工坊等壁纸平台：须在简介中注明作者和来源仓库（GitHub 上的 Ryder191/haloflux），
+  严禁任何形式的盈利，详见 LICENSE。
 -->
 <html lang="en">
 <head>
@@ -1523,17 +1527,8 @@ function syncPanel() {
   const txt = { textContent: '' };
   const vol = { value: 60, addEventListener: noop };
   const val = { textContent: '' };
-  const emb = document.getElementById('bgmData');
   const TOUCH = matchMedia('(pointer: coarse)').matches;
-  if (emb && emb.textContent.trim()) {
-    try {
-      const bin = atob(emb.textContent.replace(/\s+/g, ''));
-      const buf = new Uint8Array(bin.length);
-      for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
-      au.src = URL.createObjectURL(new Blob([buf], { type: 'audio/mpeg' }));
-      emb.textContent = '';
-    } catch (e) { au.src = au.dataset.src; }
-  } else au.src = au.dataset.src;
+  au.src = au.dataset.src;
   au.setAttribute('playsinline', '');
   let st = { on: true, vol: 60 };
   try { st = { ...st, ...(JSON.parse(localStorage.getItem(KEY) || 'null') || {}) }; } catch (e) {}

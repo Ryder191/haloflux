@@ -22,7 +22,7 @@ A full-screen, beat-driven sci-fi data visualization — a woven light-field cor
 
 Showcase video: https://b23.tv/mBUoC3r
 
-Steam Workshop (Wallpaper Engine): search *HALOFLUX* — listing coming soon.
+Steam Workshop (Wallpaper Engine): pending review — meanwhile, install it manually in one minute (see [Desktop wallpaper](#desktop-wallpaper)).
 
 ## Usage
 
@@ -46,8 +46,27 @@ Everyone who opens the page gets the baked-in default look ("我的默认").
 
 The `wallpaper/` folder is a ready-to-use **Wallpaper Engine** web wallpaper (`project.json` + `index.html`). No mouse UI, works offline, pauses (visuals and music) when a fullscreen app covers it.
 
-- **Wallpaper Engine**: search *HALOFLUX* on the Steam Workshop (listing coming soon), or open the editor → *Create Wallpaper* → drop `wallpaper/index.html` in.
+**Wallpaper Engine — manual install (no Workshop needed):**
+
+1. Download **[HALOFLUX-wallpaper-engine.zip](https://github.com/Ryder191/haloflux/releases/latest/download/HALOFLUX-wallpaper-engine.zip)** and unzip it.
+2. In your Steam Library, right-click *Wallpaper Engine* → *Manage* → *Browse local files*, then open `projects\myprojects` (create `myprojects` if it does not exist).
+3. Put the whole `HALOFLUX` folder inside, so the path is `...\wallpaper_engine\projects\myprojects\HALOFLUX\project.json` (no extra nested folder).
+4. Fully quit Wallpaper Engine (tray icon → *Quit*) and start it again. HALOFLUX appears in the *Installed* list — click it to apply.
+
+You can also open it in the Wallpaper Engine editor to tweak it: *Open Wallpaper* → *Open from file* → pick `HALOFLUX\project.json`.
+
+**Republishing on the Steam Workshop (or any wallpaper platform)** is allowed only if you:
+
+- credit the author and the source **in the item description**: `Original work: HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT)` · `Source: https://github.com/Ryder191/haloflux` (the bundled `project.json` already contains these lines — keep them);
+- do not present it as your own, and mark modified versions as *modified from HALOFLUX*;
+- make **no profit of any kind**: no paid items, paywalls, donation / tip / sponsor links, ads, paid bundles, or promotion of paid products.
+
+Anything else is not permitted. See [LICENSE](LICENSE).
+
+Other options:
+
 - **Lively Wallpaper** (free): *Add wallpaper* → URL `https://ryder191.github.io/haloflux/wallpaper/`.
+- **Steam Workshop**: the listing is pending review; this section will link to it once it is public.
 - Settings: visual preset, tempo, ring speed (both default to a calm 0.6), auto camera on/off and camera intensity, glow, beam glow, scanlines, UI panels on/off (off = halo only), music on/off and volume.
 
 ## Community
@@ -71,6 +90,7 @@ Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE):
 - ✅ **Free for noncommercial use**: personal study, hobby projects, private entertainment, research and teaching. You may use, modify and share it.
 - ❌ **Commercial use is strictly prohibited**, including use inside or on behalf of a company, integration into commercial products or services, client / paid work, selling the software or its outputs and derivatives (paid wallpapers, templates, assets, videos), and commercial advertising. No commercial licenses are offered.
 - When sharing or remixing, keep the copyright notice and credit **"HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT)"** with a link to this repository.
+- Republishing on the Steam Workshop or other wallpaper platforms requires crediting the author and this repository in the item description, and no monetization of any kind (see [Desktop wallpaper](#desktop-wallpaper)).
 
 Versions published before 2026-10-26 were released under MIT; from 2026-10-26 on, this project is licensed only under the terms above. The bundled music (`audio/sw421k.mp3`) is CC0 by its author and is not covered by this license.
 
@@ -94,7 +114,7 @@ Versions published before 2026-10-26 were released under MIT; from 2026-10-26 on
 
 演示视频：https://b23.tv/mBUoC3r
 
-Steam 创意工坊（Wallpaper Engine 壁纸）：搜索 *HALOFLUX*，即将上架。
+Steam 创意工坊（Wallpaper Engine 壁纸）：审核中。现在可以先手动安装，一分钟搞定（见[桌面动态壁纸](#桌面动态壁纸)）。
 
 ### 使用方法
 
@@ -118,8 +138,27 @@ Steam 创意工坊（Wallpaper Engine 壁纸）：搜索 *HALOFLUX*，即将上�
 
 `wallpaper/` 目录就是一个可以直接使用的 **Wallpaper Engine** 网页壁纸（`project.json` + `index.html`）：没有鼠标界面、离线可用，被全屏程序遮挡时画面和音乐都会自动暂停。
 
-- **Wallpaper Engine**：在 Steam 创意工坊搜索 *HALOFLUX*（即将上架）；也可以打开壁纸编辑器 → 创建壁纸 → 把 `wallpaper/index.html` 拖进去。
+**Wallpaper Engine 手动安装（不需要创意工坊）：**
+
+1. 下载 **[HALOFLUX-wallpaper-engine.zip](https://github.com/Ryder191/haloflux/releases/latest/download/HALOFLUX-wallpaper-engine.zip)** 并解压。
+2. 在 Steam 库里右键 *Wallpaper Engine* → *管理* → *浏览本地文件*，进入 `projects\myprojects` 文件夹（没有 `myprojects` 就新建一个）。
+3. 把整个 `HALOFLUX` 文件夹放进去，最终路径应为 `...\wallpaper_engine\projects\myprojects\HALOFLUX\project.json`（不要多套一层文件夹）。
+4. 完全退出 Wallpaper Engine（右下角托盘图标右键 → *退出*），再重新打开，在「已安装」列表里找到 HALOFLUX，点击即可应用。
+
+也可以在 Wallpaper Engine 编辑器里打开它来改：*打开壁纸* → *从文件打开* → 选择 `HALOFLUX\project.json`。
+
+**转发到 Steam 创意工坊（或其他壁纸平台）**，必须同时满足：
+
+- 在**物品简介里**写明作者和来源：`原作：HALOFLUX，作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）`、`来源：https://github.com/Ryder191/haloflux`（附带的 `project.json` 简介里已经写好这几行，保留即可）；
+- 不得冒充为自己的作品，修改版须注明「基于 HALOFLUX 修改」；
+- **不得以任何形式盈利**：不能设为付费物品或付费门槛，不能附带打赏、赞助、捐助链接，不能投放广告、打包进付费合集或推广付费产品。
+
+不满足以上条件的转发一律不允许，详见 [LICENSE](LICENSE)。
+
+其他方式：
+
 - **Lively Wallpaper**（免费）：添加壁纸 → 输入网址 `https://ryder191.github.io/haloflux/wallpaper/`。
+- **Steam 创意工坊**：审核中，公开后会在这里放上链接。
 - 可调设置：视觉预设、节拍速度、圆环转速（两者默认都是舒缓的 0.6）、自动运镜开关和运镜幅度、柔光、光束辉光、扫描线、界面面板开关（关闭后只留光环）、背景音乐开关和音量。
 
 ### 社区作品
@@ -143,5 +182,6 @@ HALOFLUX 的源代码及其视听设计（画面构图、动态设计、节拍�
 - ✅ **非商业用途免费**：个人学习、兴趣项目、个人娱乐、研究与教学，可以使用、修改和分享。
 - ❌ **严格禁止任何商业用途**，包括但不限于：在公司内部或代表公司使用、集成到商业产品或服务、接单或有偿项目、出售本软件及其生成内容和衍生作品（付费壁纸、模板、素材、视频），以及商业广告推广。不提供商业授权。
 - 转载或二次创作时，必须保留版权声明，并注明 **「HALOFLUX by Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）」** 及本仓库链接。
+- 转发到 Steam 创意工坊等壁纸平台，必须在物品简介中注明作者和本仓库，并且严禁任何形式的盈利（见[桌面动态壁纸](#桌面动态壁纸)）。
 
 2026-10-26 之前发布的版本曾以 MIT 协议发布；自 2026-10-26 起，本项目仅按上述条款授权。附带的音乐（`audio/sw421k.mp3`）由原作者以 CC0 发布，不受本协议约束。

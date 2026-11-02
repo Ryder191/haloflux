@@ -1,125 +1,143 @@
 {
-  "description": "HALOFLUX — 节拍驱动的光环数据可视化壁纸。左侧大圆网线 + 中央旋转数据环带 + 环外放射光束，随节拍变速。\n\nGitHub 开源地址：https://github.com/Ryder191/haloflux\n演示视频：https://b23.tv/mBUoC3r\n\n网页版（浏览器直接打开）：https://ryder191.github.io/haloflux/\n背景音乐：Synthwave 421k — The Cynic Project (cynicmusic)，CC0 授权。\n\n© 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT). All rights reserved. 仅限非商业使用，严格禁止任何商业用途 / Noncommercial use only - any commercial use is strictly prohibited (PolyForm Noncommercial 1.0.0).",
-  "file": "index.html",
-  "general": {
-    "properties": {
-      "preset": {
-        "order": 0,
-        "text": "视觉预设",
-        "type": "combo",
-        "value": "MINE",
-        "options": [
-          {
-            "label": "我的默认（高密度光束）",
-            "value": "MINE"
-          },
-          {
-            "label": "预设 A 暗底窄网线",
-            "value": "A"
-          },
-          {
-            "label": "预设 B 亮线均衡",
-            "value": "B"
-          }
-        ]
-      },
-      "tempo": {
-        "order": 1,
-        "text": "节拍速度",
-        "type": "slider",
-        "value": 0.6,
-        "min": 0.4,
-        "max": 2.5,
-        "step": 0.05,
-        "precision": 2,
-        "fraction": true
-      },
-      "ringspeed": {
-        "order": 2,
-        "text": "圆环转速",
-        "type": "slider",
-        "value": 0.6,
-        "min": 0,
-        "max": 3,
-        "step": 0.05,
-        "precision": 2,
-        "fraction": true
-      },
-      "camera": {
-        "order": 3,
-        "text": "自动运镜",
-        "type": "bool",
-        "value": true
-      },
-      "camzoom": {
-        "order": 4,
-        "text": "运镜幅度",
-        "type": "slider",
-        "value": 1,
-        "min": 0,
-        "max": 2,
-        "step": 0.05,
-        "precision": 2,
-        "fraction": true
-      },
-      "glow": {
-        "order": 5,
-        "text": "柔光强度",
-        "type": "slider",
-        "value": 1.1,
-        "min": 0,
-        "max": 1.5,
-        "step": 0.05,
-        "precision": 2,
-        "fraction": true
-      },
-      "beamglow": {
-        "order": 6,
-        "text": "光束辉光",
-        "type": "slider",
-        "value": 2.6,
-        "min": 0,
-        "max": 6,
-        "step": 0.1,
-        "precision": 1,
-        "fraction": true
-      },
-      "scanlines": {
-        "order": 7,
-        "text": "扫描线质感",
-        "type": "bool",
-        "value": true
-      },
-      "showui": {
-        "order": 8,
-        "text": "显示界面面板（关闭=只留光环）",
-        "type": "bool",
-        "value": true
-      },
-      "music": {
-        "order": 9,
-        "text": "背景音乐",
-        "type": "bool",
-        "value": true
-      },
-      "volume": {
-        "order": 10,
-        "text": "音乐音量",
-        "type": "slider",
-        "value": 55,
-        "min": 0,
-        "max": 100,
-        "step": 1
-      }
-    }
-  },
-  "preview": "preview.jpg",
-  "tags": [
-    "Abstract",
-    "Sci-Fi",
-    "Technology"
-  ],
-  "title": "HALOFLUX",
-  "type": "web",
-  "version": 1
+	"contentrating": "Everyone",
+	"description": "HALOFLUX  | BY Ryder -- Ms MAIKEBAIs CAT\nA beat-synced, breathing halo data visualization wallpaper.\n\nFeaturing a massive wireframe mesh, rotating data bands, and outer radiating light beams that dynamically rotate and sync to the beat with automatic camera movement. Built with pure native HTML5 Canvas, zero dependencies.\n\n⚙️ Customizable Settings\n(Adjustable directly via the wallpaper settings panel)\n\nVisual Presets: Default / Preset A (Dark Background) / Preset B (Bright Lines)\nSpeed Controls: Beat Speed & Ring Rotation Speed (Default: 0.6 for a soothing, eye-friendly experience; fully adjustable)\nAuto-Camera: Toggle On/Off & adjust camera movement intensity\nLighting & Glow: Glow Intensity & Beam Glow\nRetro Effects: Scanline Texture (On/Off)\nUI Customization: Show/Hide UI Panel (Turn off for a cleaner, halo-only look)\nAudio: Background Music (On/Off) & Volume Control\nPerformance Optimization: Auto-Pause when covered by fullscreen games (pauses both visuals and audio to save system resources)\n\n----------------\nOriginal work: HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT)\nSource: https://github.com/Ryder191/haloflux\nLicense: PolyForm Noncommercial 1.0.0. Noncommercial use only; any commercial use or monetization is strictly prohibited.\nIf you republish this wallpaper (e.g. on the Steam Workshop), you must keep these lines in the description, must not present it as your own, and must not make any profit from it. See LICENSE.\n\n原作：HALOFLUX，作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）\n来源：https://github.com/Ryder191/haloflux\n仅限非商业用途，严禁任何商业用途和盈利。转发到创意工坊等平台必须在简介中保留本段，不得冒充原创，不得以任何形式盈利，详见 LICENSE。",
+	"file": "index.html",
+	"general": {
+		"properties": {
+			"beamglow": {
+				"fraction": true,
+				"index": 6,
+				"max": 6,
+				"min": 0,
+				"order": 106,
+				"precision": 1,
+				"step": 0.1,
+				"text": "光束辉光",
+				"type": "slider",
+				"value": 2.6
+			},
+			"camera": {
+				"index": 3,
+				"order": 103,
+				"text": "自动运镜",
+				"type": "bool",
+				"value": true
+			},
+			"camzoom": {
+				"fraction": true,
+				"index": 4,
+				"max": 2,
+				"min": 0,
+				"order": 104,
+				"precision": 2,
+				"step": 0.05,
+				"text": "运镜幅度",
+				"type": "slider",
+				"value": 1
+			},
+			"glow": {
+				"fraction": true,
+				"index": 5,
+				"max": 1.5,
+				"min": 0,
+				"order": 105,
+				"precision": 2,
+				"step": 0.05,
+				"text": "柔光强度",
+				"type": "slider",
+				"value": 1.1
+			},
+			"music": {
+				"index": 9,
+				"order": 109,
+				"text": "背景音乐",
+				"type": "bool",
+				"value": true
+			},
+			"preset": {
+				"index": 0,
+				"options": [
+					{
+						"label": "我的默认（高密度光束）",
+						"value": "MINE"
+					},
+					{
+						"label": "预设 A 暗底窄网线",
+						"value": "A"
+					},
+					{
+						"label": "预设 B 亮线均衡",
+						"value": "B"
+					}
+				],
+				"order": 100,
+				"text": "视觉预设",
+				"type": "combo",
+				"value": "MINE"
+			},
+			"ringspeed": {
+				"fraction": true,
+				"index": 2,
+				"max": 3,
+				"min": 0,
+				"order": 102,
+				"precision": 2,
+				"step": 0.05,
+				"text": "圆环转速",
+				"type": "slider",
+				"value": 0.6
+			},
+			"scanlines": {
+				"index": 7,
+				"order": 107,
+				"text": "扫描线质感",
+				"type": "bool",
+				"value": true
+			},
+			"schemecolor": {
+				"order": 0,
+				"text": "ui_browse_properties_scheme_color",
+				"type": "color",
+				"value": "0 0 0"
+			},
+			"showui": {
+				"index": 8,
+				"order": 108,
+				"text": "显示界面面板（关闭=只留光环）",
+				"type": "bool",
+				"value": true
+			},
+			"tempo": {
+				"fraction": true,
+				"index": 1,
+				"max": 2.5,
+				"min": 0.4,
+				"order": 101,
+				"precision": 2,
+				"step": 0.05,
+				"text": "节拍速度",
+				"type": "slider",
+				"value": 0.6
+			},
+			"volume": {
+				"index": 10,
+				"max": 100,
+				"min": 0,
+				"order": 110,
+				"step": 1,
+				"text": "音乐音量",
+				"type": "slider",
+				"value": 55
+			}
+		}
+	},
+	"preview": "preview.jpg",
+	"ratingsex": "none",
+	"ratingviolence": "none",
+	"tags": [
+		"Technology"
+	],
+	"title": "HALOFLUX",
+	"type": "web",
+	"version": 11
 }

@@ -45,6 +45,45 @@ Ms MAIKEBAIs CAT）的原创作品，受著作权法保护。
   并注明「HALOFLUX by Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）」
   及链接 https://github.com/Ryder191/haloflux 。
 
+================================================================
+REPUBLISHING ON WALLPAPER PLATFORMS / 转发到壁纸平台
+(Steam Workshop, Wallpaper Engine, Lively, etc.)
+================================================================
+
+Anyone who republishes HALOFLUX or a work based on it on a wallpaper
+platform such as the Steam Workshop must:
+
+1. Credit the author and the source in the item description, visible
+   without opening any external page:
+     Original work: HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT)
+     Source: https://github.com/Ryder191/haloflux
+2. Not present the work as their own. Modified versions must say that
+   they are modified from HALOFLUX.
+3. Not make any profit from it: no paid items or paywalls, no
+   donation, tipping, sponsorship or membership links, no
+   advertising, no bundling into paid packs, and no use of the item
+   to promote paid products or services.
+4. Keep the copyright notice in the source files and include this
+   LICENSE file with the wallpaper.
+
+Republishing that does not meet all of the above is not permitted
+under this license. The author may report non-compliant items to the
+platform for removal.
+
+任何人在 Steam 创意工坊等壁纸平台转发 HALOFLUX 或基于它的作品，必须：
+
+1. 在物品简介中直接写明作者和来源（不能只放在外部页面里）：
+     原作：HALOFLUX，作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）
+     来源：https://github.com/Ryder191/haloflux
+2. 不得冒充为自己的作品；修改版须注明「基于 HALOFLUX 修改」。
+3. 不得以任何形式盈利：不得设为付费物品或设置付费门槛，不得附带
+   打赏、赞助、捐助或会员链接，不得投放广告，不得打包进付费合集，
+   也不得用来推广付费产品或服务。
+4. 保留源文件中的版权声明，并随壁纸附带本 LICENSE 文件。
+
+不满足以上全部条件的转发不在本许可范围内，作者有权向平台举报并
+要求下架。
+
 Earlier history: commits dated before 2026-10-26 were published under
 the MIT License. Starting 2026-10-26, this project and every later
 version are licensed only under the terms below.
