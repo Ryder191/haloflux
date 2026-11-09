@@ -149,7 +149,7 @@ Steam 创意工坊（Wallpaper Engine 壁纸）：审核中。现在可以先手
 
 **转发到 Steam 创意工坊（或其他壁纸平台）**，必须同时满足：
 
-- 在**物品简介里**写明作者和来源：`原作：HALOFLUX，作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）`（bilibili 发布分享请 @麦克白夫人的猫）、`来源：https://github.com/Ryder191/haloflux`（附带的 `project.json` 简介里已经写好这几行，保留即可）；
+- 在**物品简介里**写明作者和来源：`原作：HALOFLUX，作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）`（bilibili 发布分享请 @麦克白夫人的猫，抖音分享请 @Grand】Ryder）、`来源：https://github.com/Ryder191/haloflux`（附带的 `project.json` 简介里已经写好这几行，保留即可）；
 - 不得冒充为自己的作品，修改版须注明「基于 HALOFLUX 修改」；
 - **不得以任何形式盈利**：不能设为付费物品或付费门槛，不能附带打赏、赞助、捐助链接，不能投放广告、打包进付费合集或推广付费产品。
 
