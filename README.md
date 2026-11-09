@@ -7,6 +7,8 @@
 A full-screen, beat-driven sci-fi data visualization — a woven light-field core, a rotating ring of micro data panels, and layered beams bursting outward. Pure native Canvas, single HTML file, zero dependencies.
 
 > **Noncommercial use only. Any commercial use is strictly prohibited.** Free for personal study, hobby projects and private entertainment. See [License](#license).
+>
+> **Sharing a video or screenshot? You must put the source link in your caption:** `https://github.com/Ryder191/haloflux`
 
 ![preview](preview.png)
 
@@ -91,6 +93,7 @@ Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE):
 - ❌ **Commercial use is strictly prohibited**, including use inside or on behalf of a company, integration into commercial products or services, client / paid work, selling the software or its outputs and derivatives (paid wallpapers, templates, assets, videos), and commercial advertising. No commercial licenses are offered.
 - When sharing or remixing, keep the copyright notice and credit **"HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT)"** with a link to this repository.
 - Republishing on the Steam Workshop or other wallpaper platforms requires crediting the author and this repository in the item description, and no monetization of any kind (see [Desktop wallpaper](#desktop-wallpaper)).
+- **Sharing videos, screen recordings or screenshots** on Douyin, Bilibili, TikTok, YouTube, X or any other platform **must state the open-source link in the post itself** (caption / title / description, not only in comments): `Source: HALOFLUX by Ryder191 - https://github.com/Ryder191/haloflux`. If links are not allowed, write `GitHub: Ryder191/haloflux`. Posts without the source are not permitted and may be reported. Tagging the author is appreciated (Bilibili @麦克白夫人的猫, Douyin @Grand】Ryder).
 
 Versions published before 2026-10-26 were released under MIT; from 2026-10-26 on, this project is licensed only under the terms above. The bundled music (`audio/sw421k.mp3`) is CC0 by its author and is not covered by this license.
 
@@ -101,6 +104,8 @@ Versions published before 2026-10-26 were released under MIT; from 2026-10-26 on
 一个全屏、节拍驱动的科幻数据可视化：中心是编织状的光场核心，外面是一圈由微型数据面板组成的旋转圆环，环外有多层向外迸发的光束。纯原生 Canvas，单个 HTML 文件，零依赖。
 
 > **仅限非商业用途，严格禁止任何商业用途。** 个人学习、兴趣项目、个人娱乐可免费使用。详见[许可证](#许可证)。
+>
+> **分享视频或截图，必须在文案里注明开源地址：** `https://github.com/Ryder191/haloflux`
 
 ### 文件
 
@@ -183,5 +188,6 @@ HALOFLUX 的源代码及其视听设计（画面构图、动态设计、节拍�
 - ❌ **严格禁止任何商业用途**，包括但不限于：在公司内部或代表公司使用、集成到商业产品或服务、接单或有偿项目、出售本软件及其生成内容和衍生作品（付费壁纸、模板、素材、视频），以及商业广告推广。不提供商业授权。
 - 转载或二次创作时，必须保留版权声明，并注明 **「HALOFLUX by Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）」** 及本仓库链接。
 - 转发到 Steam 创意工坊等壁纸平台，必须在物品简介中注明作者和本仓库，并且严禁任何形式的盈利（见[桌面动态壁纸](#桌面动态壁纸)）。
+- **在抖音、bilibili、小红书、TikTok、YouTube、X 等平台分享视频、录屏或截图，必须在作品文案、标题或简介里直接注明开源地址**（不能只写在评论区）：`来源：HALOFLUX，作者 Ryder191 - https://github.com/Ryder191/haloflux`。平台不让放链接时，写明 `GitHub：Ryder191/haloflux`。未注明来源的分享不在许可范围内，作者有权举报。欢迎 @ 作者：bilibili @麦克白夫人的猫，抖音 @Grand】Ryder。
 
 2026-10-26 之前发布的版本曾以 MIT 协议发布；自 2026-10-26 起，本项目仅按上述条款授权。附带的音乐（`audio/sw421k.mp3`）由原作者以 CC0 发布，不受本协议约束。

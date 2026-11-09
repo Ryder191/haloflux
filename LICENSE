@@ -84,6 +84,42 @@ platform for removal.
 不满足以上全部条件的转发不在本许可范围内，作者有权向平台举报并
 要求下架。
 
+================================================================
+SHARING VIDEOS, SCREENSHOTS AND POSTS / 分享视频、截图和帖子
+(Douyin, Bilibili, Xiaohongshu, TikTok, YouTube, X, etc.)
+================================================================
+
+Anyone who posts a video, screen recording, screenshot, GIF or other
+content showing HALOFLUX (or a work based on it) on any social or
+video platform must state the source in the post itself - in the
+caption, title or description, visible without opening any external
+page or comment:
+
+  Source: HALOFLUX by Ryder191 - https://github.com/Ryder191/haloflux
+
+Where a platform does not allow links, write the repository name in
+plain text instead: "GitHub: Ryder191/haloflux". The content must not
+be presented as the poster's own work, and the commercial-use
+prohibition above still applies. Posts that do not state the source
+are not permitted under this license; the author may report them to
+the platform for removal.
+
+Tagging the author is appreciated but not required:
+Bilibili @麦克白夫人的猫, Douyin @Grand】Ryder.
+
+任何人在抖音、bilibili、小红书、TikTok、YouTube、X 等社交或视频平台
+发布展示 HALOFLUX（或基于它的作品）的视频、录屏、截图、动图等内容，
+必须在作品本身的文案、标题或简介中直接注明开源地址（不能只放在
+外部页面或评论区）：
+
+  来源：HALOFLUX，作者 Ryder191 - https://github.com/Ryder191/haloflux
+
+平台不允许放链接时，须以纯文字写明仓库名「GitHub：Ryder191/haloflux」。
+不得冒充为自己的作品，上文的禁止商用条款同样适用。未注明来源的
+分享不在本许可范围内，作者有权向平台举报并要求下架。
+
+欢迎 @ 作者（非强制）：bilibili @麦克白夫人的猫，抖音 @Grand】Ryder。
+
 Earlier history: commits dated before 2026-10-26 were published under
 the MIT License. Starting 2026-10-26, this project and every later
 version are licensed only under the terms below.
