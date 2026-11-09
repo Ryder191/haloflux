@@ -76,6 +76,7 @@ Other options:
 Projects built on HALOFLUX by the community, maintained by their own authors (noncommercial, under the same license):
 
 - **[dsh-haloflux](https://github.com/Ke-wood/dsh-haloflux)** by [@Ke-wood](https://github.com/Ke-wood): a DeepSeek Harness (DSH) plugin that turns HALOFLUX into a live background driven by the current agent session, with a settings page.
+  - ↳ **[Michael-ZAG/dsh-haloflux](https://github.com/Michael-ZAG/dsh-haloflux)**: a community improved version of Ke-wood's plugin (based on v0.7.1) with a reworked HUD layout and better stability, maintained by its own author.
 
 ## Credits
 
@@ -171,6 +172,7 @@ Steam 创意工坊（Wallpaper Engine 壁纸）：审核中。现在可以先手
 社区基于 HALOFLUX 制作的项目，由各自作者维护（非商业，沿用同一许可证）：
 
 - **[dsh-haloflux](https://github.com/Ke-wood/dsh-haloflux)**，作者 [@Ke-wood](https://github.com/Ke-wood)：DeepSeek Harness（DSH）插件，把 HALOFLUX 变成随当前会话实时变化的背景，并带设置页。
+  - ↳ **[Michael-ZAG/dsh-haloflux](https://github.com/Michael-ZAG/dsh-haloflux)**：Ke-wood 版的社区改进版（基于 v0.7.1），重做了 HUD 布局并增强了稳定性，由其作者独立维护。
 
 ### 致谢
 
