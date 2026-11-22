@@ -1,0 +1,4 @@
+# GitHub language stats: the HTML files are ~88% inline JavaScript (Canvas engine),
+# so leave them out of the stats and let the repo show as JavaScript.
+# Syntax highlighting of .html files is not affected.
+*.html linguist-detectable=false
